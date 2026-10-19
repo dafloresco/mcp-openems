@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Si usas este software, cítalo con estos metadatos."
+title: "mcp-openems: servidor MCP para openEMS con modos ejecutor y tutor"
+type: software
+version: 0.1.0
+license: MIT
+authors:
+  - family-names: "Flores Córdova"
+    given-names: "Daniel Alonso"
+    affiliation: "Universidad Nacional de Piura"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # quita el # y escribe tu ORCID
+# repository-code: "https://github.com/USUARIO/mcp-openems"   # completa al crear el repositorio
+# doi: "10.5281/zenodo.XXXXXXX"                              # completa tras la primera publicación en Zenodo
+keywords:
+  - Model Context Protocol
+  - openEMS
+  - FDTD
+  - antenas
+  - educación en ingeniería
+  - inteligencia artificial
+abstract: >-
+  Servidor MCP que conecta un agente de IA con el simulador electromagnético
+  openEMS en dos modos de uso docente: ejecutor (el agente diseña) y tutor (el
+  estudiante diseña y el agente solo simula, revisa y orienta; las herramientas
+  de diseño se retiran desde el servidor). Incluye plantillas del estudiante,
+  instrucciones del agente, herramientas de registro de sesiones y los scripts
+  que reproducen la verificación técnica del artículo asociado.

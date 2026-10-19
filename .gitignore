@@ -1,0 +1,13 @@
+__pycache__/
+*.py[oc]
+.venv/
+# datos generados por openEMS y por las simulaciones
+sim/
+results/
+*.log
+# datos de sesiones del estudio (nunca al repositorio)
+_logs/
+_run_state.json
+.mcp.json
+CLAUDE.md
+.claude/

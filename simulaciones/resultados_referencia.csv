@@ -1,0 +1,8 @@
+caso,f_res_mhz,s11_min_db,zin_re_ohm,zin_im_ohm,dmax_dbi,eficiencia_pct,nota
+dipolo_915,915.7,-15.1,70.5,-5.1,2.14,,Tabla 2 fila 1
+monopolo_450,459.0,-16.3,37.3,4.5,,,Tabla 2 fila 2 (D no se compara: openEMS calcula el dipolo equivalente)
+parche_fr4_2450_libro,2357.9,-9.9,26.8,8.1,5.62,42.6,Tabla 2 fila 3 (contornos MUR)
+parche_fr4_2450_ajustado,2461.8,-29.9,47.6,2.0,5.68,45.6,Tabla 2 fila 4
+parche_ro4003c_5600,5609.0,-23.6,44.2,2.4,6.33,88.8,Tabla 2 fila 5
+parche_ro4003c_5800,5795.4,-23.0,44.8,4.2,6.36,89.7,Tabla 2 fila 5
+parche_ro4003c_6000,5985.6,-20.5,42.9,5.2,6.38,87.5,Tabla 2 fila 5
