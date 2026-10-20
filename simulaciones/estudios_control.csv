@@ -23,3 +23,5 @@ contornos,dipolo_MUR,dipolo_915,,MUR,,True,906.97,-13.88,74.21,-6.91,71.5,1.813,
 hilo_finito,dipolo_seccion1mm_malla20,dipolo_915,20,,,True,842.73,-15.22,69.37,-7.38,102.2,2.087,99.71,24375,3850,criterio de energía (-44.76 dB),36.6,119
 hilo_finito,dipolo_seccion1mm_malla40,dipolo_915,40,,,True,882.15,-15.24,69.57,-6.78,92.7,2.132,99.83,180075,4176,criterio de energía (-46.08 dB),54.0,134
 hilo_finito,dipolo_seccion1mm_malla80,dipolo_915,80,,,True,905.51,-15.21,70.06,-5.73,85.4,2.136,99.74,1326675,4255,criterio de energía (-42.36 dB),110.1,276
+hilo_finito,dipolo_seccion1mm_malla120,dipolo_915,120,,,True,919.38,-15.19,70.2,-5.49,78.1,2.135,99.51,4753980,15870,criterio de energía (-40.32 dB),792.0,759
+hilo_finito,dipolo_seccion1mm_malla160,dipolo_915,160,,,True,922.3,-15.2,70.33,-4.98,78.1,2.135,99.69,10989712,20709,criterio de energía (-40.53 dB),2925.4,1593

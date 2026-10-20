@@ -9,9 +9,9 @@ Servidor [MCP](https://modelcontextprotocol.io) (Model Context Protocol) que con
 
 Es el software que acompaña al artículo *¿Ejecutor o tutor? Agentes de IA conectados a simuladores en la enseñanza de antenas* (en evaluación). Para citar el software:
 
-> Flores Córdova, D. A. (2026). *mcp-openems: servidor MCP para openEMS con modos ejecutor y tutor* (Versión 0.2.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23487839
+> Flores Córdova, D. A. (2026). *mcp-openems: servidor MCP para openEMS con modos ejecutor y tutor* (Versión 0.3.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23487839
 
-El DOI anterior es el DOI de concepto: siempre resuelve a la última versión. Cada versión tiene además su propio DOI en Zenodo. La versión que describe el artículo es la 0.2.0.
+El DOI anterior es el DOI de concepto: siempre resuelve a la última versión. Cada versión tiene además su propio DOI en Zenodo. La versión que describe el artículo es la 0.3.0.
 
 Los metadatos completos están en [`CITATION.cff`](CITATION.cff).
 
@@ -33,7 +33,9 @@ Los metadatos completos están en [`CITATION.cff`](CITATION.cff).
 | `ENTORNO.md` | Equipo, sistema operativo y versiones usados en el artículo |
 | `plantillas/` | Plantillas del estudiante para el modo tutor (dipolo y parche) |
 | `prompts/` | Instrucciones del agente por modo y por tarea |
-| `simulaciones/` | Scripts que reproducen las tablas 6 a 8 del artículo, con valores de referencia |
+| `simulaciones/` | Scripts de la prueba técnica: casos de referencia, estudios de control, extrapolación de convergencia y contraste con CST |
+| `busqueda/` | Búsqueda bibliográfica documentada: ecuaciones, scripts de descarga y deduplicación, y registro completo del cribado |
+| `protocolo/` | Simulación de potencia del modelo mixto del estudio propuesto |
 
 ## Requisitos
 
@@ -104,18 +106,20 @@ Ejemplo de entrada en `claude_desktop_config.json` o en un `.mcp.json` de proyec
 
 ```bat
 cd simulaciones
-..\.venv\Scripts\python reproducir_tabla2.py      &REM tabla 6: siete casos de referencia
-..\.venv\Scripts\python estudios_control.py       &REM tablas 7 y 8: convergencia, repetición, contornos y pérdidas
+..\.venv\Scripts\python reproducir_tabla2.py      &REM siete casos de referencia
+..\.venv\Scripts\python estudios_control.py       &REM convergencia, repetición, contornos y pérdidas
+..\.venv\Scripts\python extrapolacion.py         &REM extrapolación de Richardson de las series de convergencia
 cd ..
 .venv\Scripts\python prueba_permisos.py            &REM prueba de permisos del modo tutor
 ```
 
-Ver [`simulaciones/README.md`](simulaciones/README.md) para los casos, los tiempos y las tolerancias.
+Ver [`simulaciones/README.md`](simulaciones/README.md) para los casos, los tiempos y las tolerancias, [`busqueda/README.md`](busqueda/README.md) para la búsqueda bibliográfica y [`protocolo/README.md`](protocolo/README.md) para la simulación de potencia.
 
 ## Qué no se publica y por qué
 
 - **Soluciones de las tareas del estudio.** Publicarlas invalidaría las tareas para los participantes. Se compartirán con otros docentes a solicitud.
 - **Transcripciones y registros de participantes.** Contienen datos personales; solo se publicarán datos agregados y registros codificados, según el plan de gobernanza de datos del estudio.
+- **Resúmenes de los registros bibliográficos.** Están protegidos por derechos de autor de sus editores; `busqueda/` publica sus metadatos y las decisiones del cribado.
 - **Modelo de CST Studio Suite** usado como contraste. Requiere una licencia comercial; sus resultados están en `simulaciones/contraste_cst.csv`.
 
 ## Licencia y créditos

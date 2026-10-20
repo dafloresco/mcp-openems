@@ -7,7 +7,7 @@ Estudios de control de la prueba técnica (tablas 7 y 8 del artículo):
   repeticion    tres corridas idénticas del dipolo (lambda/80) y del parche ajustado (lambda/20)
   contornos     misma geometría con MUR y con PML (parche del libro y parche ajustado)
   perdidas      parche ajustado con tan_d = 0,02 y con tan_d = 0,0027 (resto idéntico)
-  hilo_finito   dipolo con conductor de sección cuadrada de 1 x 1 mm, mallas lambda/20, 40 y 80
+  hilo_finito   dipolo con conductor de sección cuadrada de 1 x 1 mm, mallas lambda/20, 40, 80, 120 y 160
 
 Cada corrida se hace en una copia del script de referencia con una sola modificación, y registra
 frecuencia de resonancia, S11, directividad, eficiencia, celdas, pasos de tiempo, duración y
@@ -53,7 +53,7 @@ CASES = (
        case("perdidas", "parche_tand_0.0027", PAT_ADJ, sets=["tan_d=0.0027"])]
     # Dipolo de sección finita (conductor cuadrado de 1 x 1 mm): geometría bien definida, a diferencia del hilo
     # de radio nulo cuyo radio efectivo depende de la celda. Sirve para mostrar convergencia de malla.
-    + [case("hilo_finito", f"dipolo_seccion1mm_malla{d}", DIP, mesh=d, wire=0.5) for d in (20, 40, 80)]
+    + [case("hilo_finito", f"dipolo_seccion1mm_malla{d}", DIP, mesh=d, wire=0.5) for d in (20, 40, 80, 120, 160)]
 )
 
 

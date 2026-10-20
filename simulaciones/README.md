@@ -27,15 +27,19 @@ python reproducir_tabla2.py --solo-comparar  &REM compara resultados ya calculad
 | Grupo | Qué cambia | Casos |
 |---|---|---|
 | `convergencia` | Malla λ/20, 40, 80, 120 y 160 (dipolo de hilo) y λ/20, 30 y 40 (parche ajustado) | 8 |
-| `hilo_finito` | Dipolo con conductor de sección cuadrada de 1 × 1 mm, malla λ/20, 40 y 80 | 3 |
+| `hilo_finito` | Dipolo con conductor de sección cuadrada de 1 × 1 mm, malla λ/20, 40, 80, 120 y 160 | 5 |
 | `repeticion` | Tres corridas idénticas del dipolo (λ/80) y del parche ajustado (λ/20) | 6 |
-| `contornos` | MUR frente a PML con la misma geometría (parche del libro y parche ajustado) | 4 |
+| `contornos` | MUR frente a PML con la misma geometría (dipolo, parche del libro y parche ajustado) | 5 |
 | `perdidas` | Parche ajustado con tan δ = 0,02 y con tan δ = 0,0027, resto idéntico | 2 |
 
 ```bat
-python estudios_control.py                 &REM todos (unos 40 min en el equipo de ENTORNO.md)
+python estudios_control.py                 &REM todos (unos 2 h en el equipo de ENTORNO.md)
 python estudios_control.py contornos       &REM solo un grupo
 ```
+
+## Extrapolación de la convergencia
+
+`extrapolacion.py` ajusta f(h) = f∞ − C·h^p (h = 1/N) por mínimos cuadrados sobre todos los niveles de cada serie e informa p, f∞, el residuo y la predicción del nivel más fino sin usarlo (`extrapolacion.csv`). En los dipolos f∞ es una extrapolación empírica, no un límite físico: el radio efectivo del hilo de espesor nulo y la sección efectiva del conductor de 1 × 1 mm dependen del tamaño de celda.
 
 ## Contraste con CST Studio Suite
 

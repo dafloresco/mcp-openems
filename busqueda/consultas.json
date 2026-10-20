@@ -1,0 +1,6 @@
+{
+ "S1": "(\"AI agent\" OR \"LLM agent\" OR \"agentic AI\" OR \"Model Context Protocol\") AND (education OR teaching) AND (engineering OR simulation)",
+ "S2": "(\"large language model\" OR \"generative AI\" OR ChatGPT) AND \"engineering education\" AND (antenna OR electromagnetic OR simulation OR \"circuit design\")",
+ "S3": "(\"intelligent tutoring\" OR \"AI tutor\") AND engineering AND (simulation OR design)",
+ "S4b": "(\"generative AI\" OR \"large language model\") AND learning AND (\"cognitive offloading\" OR overreliance OR \"over-reliance\" OR \"self-regulated\") AND (engineering OR STEM)"
+}

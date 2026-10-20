@@ -1,0 +1,4 @@
+serie,niveles,p,f_inf_mhz,rms_mhz,prediccion_nivel_mas_fino,cambio_ultimo_pct,distancia_referencia_pct
+Dipolo de hilo de espesor nulo,lambda/20 lambda/40 lambda/80 lambda/120 lambda/160,0.69,959.6,0.13,932.5 (observado 932.5),0.63,
+Dipolo de sección 1 x 1 mm,lambda/20 lambda/40 lambda/80 lambda/120 lambda/160,0.63,953.0,1.21,925.0 (observado 922.3),0.32,
+Parche en FR-4 ajustado,lambda/20 lambda/30 lambda/40,2.93,2473.0,0.0,,0.08,
