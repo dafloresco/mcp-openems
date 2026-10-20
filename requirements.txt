@@ -1,0 +1,7 @@
+# Dependencias mínimas. Para reproducir exactamente el entorno del artículo, usa requirements-lock.txt.
+# openEMS 0.37.0 y CSXCAD 0.7.0 se instalan aparte desde la distribución de openEMS (ver README).
+mcp[cli]>=1.28.1,<2
+numpy
+h5py
+matplotlib
+psutil

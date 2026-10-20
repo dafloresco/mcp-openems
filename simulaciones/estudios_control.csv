@@ -1,0 +1,25 @@
+grupo,caso,base,malla,contorno,cambios,ok,f_res_mhz,s11_min_db,zin_re,zin_im,bw_mhz,dmax_dbi,eficiencia_pct,celdas,pasos,parada,duracion_s,memoria_max_mb
+convergencia,dipolo_malla20,dipolo_915,20,,,True,846.38,-15.21,69.46,-7.24,97.8,2.089,99.72,22464,1017,criterio de energía (-48.64 dB),32.2,116
+convergencia,dipolo_malla40,dipolo_915,40,,,True,889.45,-15.21,69.99,-5.91,84.7,2.134,99.76,172800,1500,criterio de energía (-43.35 dB),44.5,130
+convergencia,dipolo_malla80,dipolo_915,80,,,True,915.73,-15.16,70.47,-4.94,75.2,2.138,99.78,1298892,2394,criterio de energía (-43.59 dB),88.0,284
+convergencia,dipolo_malla120,dipolo_915,120,,,True,926.68,-15.12,70.76,-4.3,69.3,2.139,99.62,4312000,4284,criterio de energía (-41.51 dB),212.4,699
+convergencia,dipolo_malla160,dipolo_915,160,,,True,932.52,-15.06,70.84,-4.63,66.4,2.137,99.56,10320448,5031,criterio de energía (-40.11 dB),562.9,1504
+convergencia,parche_malla20,parche_fr4_2450_ajustado,20,,,True,2461.76,-30.75,47.77,1.76,58.8,5.682,45.88,70224,11137,criterio de energía (-45.06 dB),90.6,128
+convergencia,parche_malla30,parche_fr4_2450_ajustado,30,,,True,2469.6,-50.72,49.71,0.03,62.7,5.677,45.99,191268,10626,criterio de energía (-44.21 dB),108.4,139
+convergencia,parche_malla40,parche_fr4_2450_ajustado,40,,,True,2471.56,-38.84,50.01,1.14,60.8,5.671,45.91,394052,11250,criterio de energía (-42.20 dB),139.0,160
+repeticion,dipolo_rep1,dipolo_915,,,,True,915.73,-15.15,70.46,-5.02,75.2,2.138,99.61,1298892,2337,criterio de energía (-41.44 dB),81.9,270
+repeticion,dipolo_rep2,dipolo_915,,,,True,915.73,-15.13,70.52,-5.06,75.2,2.139,99.62,1298892,2299,criterio de energía (-40.21 dB),87.8,292
+repeticion,dipolo_rep3,dipolo_915,,,,True,915.73,-15.16,70.46,-4.94,75.2,2.139,99.78,1298892,2413,criterio de energía (-44.57 dB),92.3,270
+repeticion,parche_rep1,parche_fr4_2450_ajustado,,,,True,2461.76,-32.41,48.07,1.34,56.8,5.681,46.34,70224,12341,criterio de energía (-43.54 dB),103.8,128
+repeticion,parche_rep2,parche_fr4_2450_ajustado,,,,True,2461.76,-32.95,48.15,1.21,56.8,5.681,46.47,70224,12857,criterio de energía (-51.06 dB),103.2,130
+repeticion,parche_rep3,parche_fr4_2450_ajustado,,,,True,2461.76,-31.19,47.86,1.64,58.8,5.682,46.01,70224,11395,criterio de energía (-46.51 dB),91.1,128
+contornos,parche_libro_MUR,parche_fr4_2450_libro,,MUR,,True,2357.88,-9.73,26.36,8.35,,5.623,41.77,70224,12814,criterio de energía (-42.38 dB),95.1,124
+contornos,parche_libro_PML,parche_fr4_2450_libro,,PML_8,,True,2357.88,-9.94,26.68,7.65,,5.562,42.77,70224,14878,criterio de energía (-48.29 dB),139.5,132
+contornos,parche_ajustado_MUR,parche_fr4_2450_ajustado,,MUR,,True,2463.72,-31.5,47.48,0.6,56.8,5.745,45.8,70224,11352,criterio de energía (-41.17 dB),87.0,123
+contornos,parche_ajustado_PML,parche_fr4_2450_ajustado,,PML_8,,True,2461.76,-32.8,48.11,1.22,56.8,5.68,46.43,70224,12728,criterio de energía (-41.52 dB),115.0,130
+perdidas,parche_tand_0.02,parche_fr4_2450_ajustado,,,,True,2461.76,-33.03,48.15,1.18,56.8,5.68,46.49,70224,12943,criterio de energía (-41.17 dB),116.0,132
+perdidas,parche_tand_0.0027,parche_fr4_2450_ajustado,,,tan_d=0.0027,True,2461.76,-12.15,77.38,-16.0,27.4,5.683,80.55,70224,11395,criterio de energía (-40.27 dB),103.3,131
+contornos,dipolo_MUR,dipolo_915,,MUR,,True,906.97,-13.88,74.21,-6.91,71.5,1.813,99.81,1298892,2394,criterio de energía (-44.47 dB),54.6,257
+hilo_finito,dipolo_seccion1mm_malla20,dipolo_915,20,,,True,842.73,-15.22,69.37,-7.38,102.2,2.087,99.71,24375,3850,criterio de energía (-44.76 dB),36.6,119
+hilo_finito,dipolo_seccion1mm_malla40,dipolo_915,40,,,True,882.15,-15.24,69.57,-6.78,92.7,2.132,99.83,180075,4176,criterio de energía (-46.08 dB),54.0,134
+hilo_finito,dipolo_seccion1mm_malla80,dipolo_915,80,,,True,905.51,-15.21,70.06,-5.73,85.4,2.136,99.74,1326675,4255,criterio de energía (-42.36 dB),110.1,276

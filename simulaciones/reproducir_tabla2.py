@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Reproduce la tabla 2 del artículo: ejecuta cada simulación de esta carpeta y compara su
+Reproduce la tabla 6 del artículo (tabla 2 en la primera versión): ejecuta cada simulación de esta carpeta y compara su
 summary.json con los valores publicados (resultados_referencia.csv).
 
     python reproducir_tabla2.py                    # todas (unos 20-30 min en una portátil)

@@ -9,11 +9,13 @@ Servidor [MCP](https://modelcontextprotocol.io) (Model Context Protocol) que con
 
 Es el software que acompaña al artículo *¿Ejecutor o tutor? Agentes de IA conectados a simuladores en la enseñanza de antenas* (en evaluación). Para citar el software:
 
-> Flores Córdova, D. A. (2026). *mcp-openems: servidor MCP para openEMS con modos ejecutor y tutor* (Versión 0.1.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23487839
+> Flores Córdova, D. A. (2026). *mcp-openems: servidor MCP para openEMS con modos ejecutor y tutor* (Versión 0.2.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23487839
+
+El DOI anterior es el DOI de concepto: siempre resuelve a la última versión. Cada versión tiene además su propio DOI en Zenodo. La versión que describe el artículo es la 0.2.0.
 
 Los metadatos completos están en [`CITATION.cff`](CITATION.cff).
 
-> *English summary:* an MCP server that lets an AI agent drive the openEMS FDTD simulator in two teaching modes. In **executor** mode the agent designs the antenna. In **tutor** mode the student designs it and the agent may only run, check and explain, because design tools are removed at the server level. It includes student templates, agent prompts, session-logging tools and the scripts that reproduce the article's validation table.
+> *English summary:* an MCP server that lets an AI agent drive the openEMS FDTD simulator in two teaching modes. In **executor** mode the agent designs the antenna. In **tutor** mode the student designs it and the agent may only run, check and explain, because design tools are removed at the server level. It includes student templates, agent prompts, session-logging tools and the scripts that reproduce the article's verification tables and a permission test of tutor mode.
 
 ## Contenido
 
@@ -26,9 +28,12 @@ Los metadatos completos están en [`CITATION.cff`](CITATION.cff).
 | `configurar_sesion.py` | Prepara una sesión del estudio en Claude Code: modo, participante y permisos |
 | `recoger_sesion.py` | Reúne transcripciones, registro MCP y proyectos de un participante, con SHA-256 |
 | `selftest.py` | Prueba de extremo a extremo del servidor |
+| `prueba_permisos.py` | Prueba de permisos del modo tutor: herramientas declaradas, llamadas prohibidas y política del cliente |
+| `requirements.txt`, `requirements-lock.txt` | Dependencias mínimas y entorno exacto del artículo |
+| `ENTORNO.md` | Equipo, sistema operativo y versiones usados en el artículo |
 | `plantillas/` | Plantillas del estudiante para el modo tutor (dipolo y parche) |
 | `prompts/` | Instrucciones del agente por modo y por tarea |
-| `simulaciones/` | Scripts que reproducen la tabla 2 del artículo, con valores de referencia |
+| `simulaciones/` | Scripts que reproducen las tablas 6 a 8 del artículo, con valores de referencia |
 
 ## Requisitos
 
@@ -42,13 +47,13 @@ Los metadatos completos están en [`CITATION.cff`](CITATION.cff).
 ```bat
 cd mcp-openems
 python -m venv .venv
-.venv\Scripts\python -m pip install numpy h5py matplotlib "mcp[cli]>=1.28.1,<2"
+.venv\Scripts\python -m pip install -r requirements.txt
 .venv\Scripts\python -m pip install --no-index --find-links C:\openEMS\python openEMS
 set CSXCAD_INSTALL_PATH=C:\openEMS
 .venv\Scripts\python selftest.py --quick
 ```
 
-`mcp` se fija en `<2` porque la versión 2.x renombró FastMCP. Si se prefiere [uv](https://docs.astral.sh/uv/), los comandos equivalentes son `uv venv --python 3.14 .venv` y `uv pip install --python .venv\Scripts\python.exe ...`.
+Para el entorno exacto del artículo, usa `requirements-lock.txt` en lugar de `requirements.txt` (ver [`ENTORNO.md`](ENTORNO.md)). `mcp` se fija en `<2` porque la versión 2.x renombró FastMCP. Si se prefiere [uv](https://docs.astral.sh/uv/), los comandos equivalentes son `uv venv --python 3.14 .venv` y `uv pip install --python .venv\Scripts\python.exe ...`.
 
 ### Registro en el cliente MCP
 
@@ -99,10 +104,19 @@ Ejemplo de entrada en `claude_desktop_config.json` o en un `.mcp.json` de proyec
 
 ```bat
 cd simulaciones
-..\.venv\Scripts\python reproducir_tabla2.py
+..\.venv\Scripts\python reproducir_tabla2.py      &REM tabla 6: siete casos de referencia
+..\.venv\Scripts\python estudios_control.py       &REM tablas 7 y 8: convergencia, repetición, contornos y pérdidas
+cd ..
+.venv\Scripts\python prueba_permisos.py            &REM prueba de permisos del modo tutor
 ```
 
 Ver [`simulaciones/README.md`](simulaciones/README.md) para los casos, los tiempos y las tolerancias.
+
+## Qué no se publica y por qué
+
+- **Soluciones de las tareas del estudio.** Publicarlas invalidaría las tareas para los participantes. Se compartirán con otros docentes a solicitud.
+- **Transcripciones y registros de participantes.** Contienen datos personales; solo se publicarán datos agregados y registros codificados, según el plan de gobernanza de datos del estudio.
+- **Modelo de CST Studio Suite** usado como contraste. Requiere una licencia comercial; sus resultados están en `simulaciones/contraste_cst.csv`.
 
 ## Licencia y créditos
 

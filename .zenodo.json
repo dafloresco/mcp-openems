@@ -1,10 +1,10 @@
 {
   "title": "mcp-openems: servidor MCP para openEMS con modos ejecutor y tutor",
   "upload_type": "software",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "language": "spa",
   "license": "MIT",
-  "description": "<p>Servidor MCP (Model Context Protocol) que conecta un agente de inteligencia artificial con el simulador electromagnético libre openEMS en dos modos de uso docente: ejecutor (el agente diseña, simula y ajusta) y tutor (el estudiante diseña y el agente solo simula, revisa y orienta; las herramientas de diseño se retiran desde el servidor). Incluye plantillas del estudiante, instrucciones del agente por modo, herramientas de configuración y recolección de sesiones con registro de interacción, y los scripts que reproducen la verificación técnica (tabla 2) del artículo asociado.</p>",
+  "description": "<p>Servidor MCP (Model Context Protocol) que conecta un agente de inteligencia artificial con el simulador electromagnético libre openEMS en dos modos de uso docente: ejecutor (el agente diseña, simula y ajusta) y tutor (el estudiante diseña y el agente solo simula, revisa y orienta; las herramientas de diseño se retiran desde el servidor). Incluye plantillas del estudiante, instrucciones del agente por modo, herramientas de configuración y recolección de sesiones con registro de interacción, y los scripts que reproducen la verificación técnica (tablas 6 a 8) y la prueba de permisos del modo tutor descritas en el artículo asociado.</p>",
   "creators": [
     {
       "name": "Flores Córdova, Daniel Alonso",

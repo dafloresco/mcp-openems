@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Si usas este software, cítalo con estos metadatos."
 title: "mcp-openems: servidor MCP para openEMS con modos ejecutor y tutor"
 type: software
-version: 0.1.0
+version: 0.2.0
 license: MIT
 authors:
   - family-names: "Flores Córdova"

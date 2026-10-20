@@ -1,0 +1,3 @@
+simulador,caso,malla,contornos,conductores,f_res_mhz,s11_min_db,bw_10db_mhz,bw_10db_pct,eficiencia_rad_pct,nota
+openEMS 0.37.0,parche_fr4_2450_ajustado,lambda/20 (70 224 celdas),PML_8,PEC espesor nulo,2461.76,-32.18,57.5,2.34,46.27,media de 3 repeticiones (estudios_control.csv)
+CST Studio Suite 2025 (solver temporal),parche_fr4_2450_ajustado,PBA 20 lineas por longitud de onda,abierto + 30 mm de aire,PEC 35 um,2451.96,-42.92,61.7,2.52,46.00,eficiencia a 2,46 GHz (monitor de campo lejano); directividad no evaluada por fallo de la exportacion del campo lejano

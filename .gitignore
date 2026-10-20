@@ -11,3 +11,5 @@ _run_state.json
 .mcp.json
 CLAUDE.md
 .claude/
+# carpetas de corrida de los estudios de control (se regeneran con estudios_control.py)
+simulaciones/_estudios/

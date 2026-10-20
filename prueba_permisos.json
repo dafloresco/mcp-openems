@@ -1,0 +1,173 @@
+{
+  "protocolo_mcp": "2025-11-25",
+  "herramientas_full": 42,
+  "herramientas_tutor": 17,
+  "ocultas_en_tutor": [
+    "oems_add_box",
+    "oems_add_cylinder",
+    "oems_add_lumped_port",
+    "oems_add_polygon",
+    "oems_create_dielectric",
+    "oems_create_fr4_material",
+    "oems_create_metal",
+    "oems_create_microstrip_patch_template",
+    "oems_delete_material",
+    "oems_delete_parameter",
+    "oems_delete_port",
+    "oems_delete_primitive",
+    "oems_duplicate_project",
+    "oems_generate_script",
+    "oems_new_project",
+    "oems_patch_calculator",
+    "oems_set_air_margin",
+    "oems_set_boundaries",
+    "oems_set_farfield",
+    "oems_set_fdtd",
+    "oems_set_frequency_range",
+    "oems_set_mesh",
+    "oems_set_parameter",
+    "oems_set_parameters_batch",
+    "oems_sweep_parameter"
+  ],
+  "llamadas_prohibidas": 25,
+  "rechazadas": 25,
+  "archivos_sin_cambios": true,
+  "politica_cliente": {
+    "defaultMode": "dontAsk",
+    "deny_completo": true,
+    "allow": [
+      "mcp__openems",
+      "Read",
+      "Glob",
+      "Grep"
+    ]
+  },
+  "detalle": [
+    {
+      "tool": "oems_add_box",
+      "rejected": true,
+      "message": "Unknown tool: oems_add_box"
+    },
+    {
+      "tool": "oems_add_cylinder",
+      "rejected": true,
+      "message": "Unknown tool: oems_add_cylinder"
+    },
+    {
+      "tool": "oems_add_lumped_port",
+      "rejected": true,
+      "message": "Unknown tool: oems_add_lumped_port"
+    },
+    {
+      "tool": "oems_add_polygon",
+      "rejected": true,
+      "message": "Unknown tool: oems_add_polygon"
+    },
+    {
+      "tool": "oems_create_dielectric",
+      "rejected": true,
+      "message": "Unknown tool: oems_create_dielectric"
+    },
+    {
+      "tool": "oems_create_fr4_material",
+      "rejected": true,
+      "message": "Unknown tool: oems_create_fr4_material"
+    },
+    {
+      "tool": "oems_create_metal",
+      "rejected": true,
+      "message": "Unknown tool: oems_create_metal"
+    },
+    {
+      "tool": "oems_create_microstrip_patch_template",
+      "rejected": true,
+      "message": "Unknown tool: oems_create_microstrip_patch_template"
+    },
+    {
+      "tool": "oems_delete_material",
+      "rejected": true,
+      "message": "Unknown tool: oems_delete_material"
+    },
+    {
+      "tool": "oems_delete_parameter",
+      "rejected": true,
+      "message": "Unknown tool: oems_delete_parameter"
+    },
+    {
+      "tool": "oems_delete_port",
+      "rejected": true,
+      "message": "Unknown tool: oems_delete_port"
+    },
+    {
+      "tool": "oems_delete_primitive",
+      "rejected": true,
+      "message": "Unknown tool: oems_delete_primitive"
+    },
+    {
+      "tool": "oems_duplicate_project",
+      "rejected": true,
+      "message": "Unknown tool: oems_duplicate_project"
+    },
+    {
+      "tool": "oems_generate_script",
+      "rejected": true,
+      "message": "Unknown tool: oems_generate_script"
+    },
+    {
+      "tool": "oems_new_project",
+      "rejected": true,
+      "message": "Unknown tool: oems_new_project"
+    },
+    {
+      "tool": "oems_patch_calculator",
+      "rejected": true,
+      "message": "Unknown tool: oems_patch_calculator"
+    },
+    {
+      "tool": "oems_set_air_margin",
+      "rejected": true,
+      "message": "Unknown tool: oems_set_air_margin"
+    },
+    {
+      "tool": "oems_set_boundaries",
+      "rejected": true,
+      "message": "Unknown tool: oems_set_boundaries"
+    },
+    {
+      "tool": "oems_set_farfield",
+      "rejected": true,
+      "message": "Unknown tool: oems_set_farfield"
+    },
+    {
+      "tool": "oems_set_fdtd",
+      "rejected": true,
+      "message": "Unknown tool: oems_set_fdtd"
+    },
+    {
+      "tool": "oems_set_frequency_range",
+      "rejected": true,
+      "message": "Unknown tool: oems_set_frequency_range"
+    },
+    {
+      "tool": "oems_set_mesh",
+      "rejected": true,
+      "message": "Unknown tool: oems_set_mesh"
+    },
+    {
+      "tool": "oems_set_parameter",
+      "rejected": true,
+      "message": "Unknown tool: oems_set_parameter"
+    },
+    {
+      "tool": "oems_set_parameters_batch",
+      "rejected": true,
+      "message": "Unknown tool: oems_set_parameters_batch"
+    },
+    {
+      "tool": "oems_sweep_parameter",
+      "rejected": true,
+      "message": "Unknown tool: oems_sweep_parameter"
+    }
+  ],
+  "resultado": "PASA"
+}
