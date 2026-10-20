@@ -1,11 +1,17 @@
 # mcp-openems
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23487839.svg)](https://doi.org/10.5281/zenodo.23487839)
+
 Servidor [MCP](https://modelcontextprotocol.io) (Model Context Protocol) que conecta un agente de inteligencia artificial con el simulador electromagnético libre [openEMS](https://www.openems.de) (FDTD). Lo hace en dos modos de uso pensados para la docencia de antenas:
 
 - **Ejecutor:** el agente diseña, simula y ajusta la antena.
 - **Tutor:** el estudiante escribe el diseño y el agente solo simula, revisa y orienta. Las herramientas que crean o modifican el modelo se retiran desde el servidor.
 
-Es el software que acompaña al artículo *¿Ejecutor o tutor? Agentes de IA conectados a simuladores en la enseñanza de antenas* (en evaluación). La forma de citarlo está en [`CITATION.cff`](CITATION.cff).
+Es el software que acompaña al artículo *¿Ejecutor o tutor? Agentes de IA conectados a simuladores en la enseñanza de antenas* (en evaluación). Para citar el software:
+
+> Flores Córdova, D. A. (2026). *mcp-openems: servidor MCP para openEMS con modos ejecutor y tutor* (Versión 0.1.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23487839
+
+Los metadatos completos están en [`CITATION.cff`](CITATION.cff).
 
 > *English summary:* an MCP server that lets an AI agent drive the openEMS FDTD simulator in two teaching modes. In **executor** mode the agent designs the antenna. In **tutor** mode the student designs it and the agent may only run, check and explain, because design tools are removed at the server level. It includes student templates, agent prompts, session-logging tools and the scripts that reproduce the article's validation table.
 

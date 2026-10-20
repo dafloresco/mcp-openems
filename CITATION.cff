@@ -9,8 +9,8 @@ authors:
     given-names: "Daniel Alonso"
     affiliation: "Universidad Nacional de Piura"
     # orcid: "https://orcid.org/0000-0000-0000-0000"   # quita el # y escribe tu ORCID
-# repository-code: "https://github.com/USUARIO/mcp-openems"   # completa al crear el repositorio
-# doi: "10.5281/zenodo.XXXXXXX"                              # completa tras la primera publicación en Zenodo
+repository-code: "https://github.com/dafloresco/mcp-openems"
+doi: "10.5281/zenodo.23487839"
 keywords:
   - Model Context Protocol
   - openEMS
